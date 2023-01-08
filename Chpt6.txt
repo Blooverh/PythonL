@@ -1,0 +1,10 @@
+Dictionaires
+>> collection of key value pairs
+>> each key is connected to a value and we can use a key to access the value associated with that key
+>> A key's value can be a number, a string, a list, or even another dictionary
+
+-> Key-value pair is a set of values associated with each other.
+When we provide a key, python returns the value associated with that key
+
+Every key is connected to its value by a colon ":" and individual key value pairs are separated by commas
+

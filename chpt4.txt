@@ -1,0 +1,45 @@
+#Working with lists
+
+magicians=["Diogo", "Rohana", "Hugo"]
+for i in magicians: #i is the variable  associated with each value in the list
+    print(i) # prints the value in list where i is associated to the elements in the list
+
+for i in magicians:
+    print(f"{i.title()}, that was a great trick! ")
+
+#############################
+#Avoiding identation Errors
+##for i in magicians:
+##print(i) -> this does not have block identation
+##  print(i) -> indented block (correct way to write this)
+############################
+
+for i in magicians: print(i) ## we can also indent the block like this
+
+#example of unecessary identation
+message= "hello world"
+print(message)# wrong identation will result in error
+
+###LIST COMPREHENSION
+>> Allows to generate a list in a shorter way (1 line of code)
+>> Combines the for loop and the creation of new elements into one line, and automatically appends each new element
+
+for i in range(2,21,2) displays even numbers because of the first 2 given which is the first number
+last 2 (x,y,2) just helps interpret that we are selecting specific numbers
+for i in range(1,21,2) displays odd numbers because of the 3 given which is the first number
+
+for i in range(3,30,3): displays all number multiple of 3 from 3 to 30
+
+######################################################################
+TUPLES:
+-> Tuples are used to create lists that are not modifieable, meaning once we instaciate it
+we cannot modify the objects in the tuple (immutable)
+Immutable list = tuple
+mutable list = list
+
+Defining a tuple:
+>> just like a list but we use parenthesis instead of square brackets
+example: dimensions= (200, 50)
+print(dimensions[0])
+print(dimensions[1])
+
