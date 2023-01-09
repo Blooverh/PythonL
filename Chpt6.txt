@@ -8,3 +8,35 @@ When we provide a key, python returns the value associated with that key
 
 Every key is connected to its value by a colon ":" and individual key value pairs are separated by commas
 
+Using get() method to access values 
+#get methods used to set a dafault value that will be returned if the requested key does not exist
+#syntax: dict.get(key, default=None)
+
+Looping through all key-value pairs
+#syntax: for key, value in dict.items():
+
+SET -> set() is a collection in which each item must be unique
+# syntax: set = {'item1', 'item2', 'item3'}
+# syntax: set = set(['item1', 'item2', 'item3'])
+
+# When wrapping a set() around a list that contains duplicate items. 
+# Python identifies the unique items in the list and builds a set from those items 
+
+# Building a set 
+# languages = {"python", "java", "JS"} etc....
+
+NOTE: DO NOT MISTAKE A DICTIONARY WITH A SET 
+# A dictionary is a collection of key-value pairs.
+# A set is a collection of values.
+
+# A set cannot have duplicate items.
+# A dictionary can have duplicate values, but each key must be unique.
+
+# A set is created by placing all the items (elements) inside curly braces {}, separated by comma or by using the built-in function set().
+# A dictionary is created by placing a sequence of elements within curly braces {}.
+
+## NESTING DICTIONARY
+-> Sometimes we will want to store multiple Dictionaires in a list of items
+as a value in a dictionary. This called is NESTING
+>> We can nest dictionaries inside a list or a list of items inside a dictionary
+Or even a dictionary inside a dictionary
