@@ -173,11 +173,32 @@ for alienNum in range(30):
     new_alien= {"color":"red", "points":15, "speed":"slow"}
     aliens.append(new_alien)
 
+#modifying 3 aliens out of the 30 created to new data 
+for alien in aliens[:3]:
+    if alien["color"] == "red":
+        alien["color"]="yellow"
+        alien["speed"]="medium"
+        alien["points"]=20
+
 #showing first 5 elements 
 print("The first 5 aliens are:")
 for alien in aliens[:5]:
     print(alien)
 print("............")
 print(f"total number of aliens is {len(aliens)}")
+
+print()
+print()
+
+pizza={
+    "crust": "thick",
+    "toppings": ["mushrooms", "bacon", "cheese"] #key toppings have a list with value mushrooms, bacon, cheese
+}
+
+#summarize the order.
+print(f"You ordered a {pizza['crust']}-crust pizza ""with the following toppings:")
+for topping in pizza["toppings"]:
+    print("\t" + topping.title())
+
 
 

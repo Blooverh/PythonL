@@ -40,3 +40,26 @@ NOTE: DO NOT MISTAKE A DICTIONARY WITH A SET
 as a value in a dictionary. This called is NESTING
 >> We can nest dictionaries inside a list or a list of items inside a dictionary
 Or even a dictionary inside a dictionary
+
+Note: It is common to store a number of dictionaries ina list when each dictionary 
+contains many kinds of information about 1 object.
+
+EXAMPLE: We might wanna create a dictionary for each user on a website and 
+store each dictionary in a list called users 
+>> Each dictionary would contain the users username, first name, last name, and location
+>> We could loop through the list and print out all the information we have stored about each user
+
+-------------------------
+A LIST IN A DICTIONARY
+Rather than putting a dictionary inside a list, it is sometimes useful to put a list inside a dictionary
+EXAMPLE: Consider how we might describe a pizza that someone is ordering
+>> With a dictionary, a list of toppings could be can be just one aspect of the pizza we are describing
+
+In the following example, two kinds of information are stored for each 
+pizza: a type of crust and a list of toppings. The list of toppings is a value 
+associated with the key 'toppings'. To use the items in the list, we give the 
+name of the dictionary and the key 'toppings', as we would any value in the 
+dictionary. Instead of returning a single value, we get a list of toppings:
+EXAMPLE ON .PY FILE 
+
+
