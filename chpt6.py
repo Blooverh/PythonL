@@ -159,7 +159,7 @@ alien_0={"color":"green", "points":5}
 alien_1={"color":"yellow", "points":10}
 alien_2={"color":"red", "points":15}
 
-aliens=[alien_0, alien_1, alien_2]
+aliens=[alien_0, alien_1, alien_2] #A list of 3 dictionaries
 
 for alien in aliens:
     print(alien)
@@ -197,8 +197,32 @@ pizza={
 
 #summarize the order.
 print(f"You ordered a {pizza['crust']}-crust pizza ""with the following toppings:")
+
+#summarizinf the order again
 for topping in pizza["toppings"]:
     print("\t" + topping.title())
 
+##Another example:
+favorite_languages={
+    "Diogo": ["Java", "Python"],
+    "Rohana": ["R", "Python"],
+    "Hugo": ["Rust", "C++"]
+}
 
+for name, languages in favorite_languages.items():
+    print(f"\n{name.title()}' favorite languages are: ")
+    for language in languages:
+        print(f"{language.title()}")
+        
+#Dictionary in a dictionary
+users={
+    'aeinstein':{"first":"albert", "last":"Einstein", "location":"princeton"},
+    "mcurie":{"first":"marie", "last":"curie", "location":"paris"}
+}
 
+for username, user_info in users.items():
+    print(f"\nUsername: {username}")
+    full_name= f"{user_info['first']} {user_info['last']}"
+    location= user_info["location"]
+    print(f"\tFull name: {full_name.title()}")
+    print(f"\tLocation: {location.title()}")
