@@ -1,0 +1,11 @@
+USER INPUT AND WHILE LOOPS
+
+input() fuction pauses your program and waits for the  user to enter some text
+Once python receives the user's input, it assigns that input to a variable to make it convenient for you to work with
+
+The input() function takes one argument: the prompt, or instructions, that we want to display to the user so they know what to do
+
+Writing clear prompts
+
+EAch time we use the input() function, we should include a clear easy to follow prompt that tells the user exactly
+what kind of information to put.

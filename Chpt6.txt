@@ -1,6 +1,6 @@
 Dictionaires
 >> collection of key value pairs
->> each key is connected to a value and we can use a key to access the value associated with that key
+>> each key is connected to a value, and we can use a key to access the value associated with that key
 >> A key's value can be a number, a string, a list, or even another dictionary
 
 -> Key-value pair is a set of values associated with each other.
@@ -44,9 +44,9 @@ Or even a dictionary inside a dictionary
 Note: It is common to store a number of dictionaries ina list when each dictionary 
 contains many kinds of information about 1 object.
 
-EXAMPLE: We might wanna create a dictionary for each user on a website and 
+EXAMPLE: We might want to create a dictionary for each user on a website and
 store each dictionary in a list called users 
->> Each dictionary would contain the users username, first name, last name, and location
+>> Each dictionary would contain the user's username, first name, last name, and location
 >> We could loop through the list and print out all the information we have stored about each user
 
 -------------------------

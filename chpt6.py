@@ -2,6 +2,7 @@ alien_o={'color':'green', 'points': 5 }
 print(alien_o['color'])
 print(alien_o['points'])
 
+#adding keys and assigning values to them for a dictionary
 alien_o['x-position']=0 #key : value -> key = string / value= 0
 alien_o['y-position']=25
 print(alien_o)
@@ -33,7 +34,7 @@ print(f"New position is: {alien_o['x_position']}")
 
 #REMOVING KEY VALUE PAIRS
 alien_o={'color':'green', 'points': 5 }
-del alien_o['points']
+del alien_o['points'] #important to know the delete syntax
 print(alien_o)
 
 #A dictionary of similar objects
@@ -69,7 +70,8 @@ print(personal_info) #prints the dictionary
 favNums={"Diogo":28, "Rohana":3, "hugo":19, "Catia":40}
 
 for i in favNums:
-    print(f"{i.title()}'s favorite number is: {favNums[i]}")   
+    print(f"{i.title()}'s favorite number is: {favNums[i]}")
+
 ####### DIFFERENT WAY OF ACCESSING THE DICTIONARY
 for k,v in dict.items(favNums):
     print(f"{k.title()}'s favorite number is: {v}") 
@@ -92,8 +94,9 @@ fav_idioms={
 }
 
 for name in sorted(fav_idioms):
-    print(f"{name.title()}, take you for taking the poll!")
+    print(f"{name.title()}, thank you for taking the poll!")
 print()
+
 #looping through all values in dictionary 
 for idiom in fav_idioms.values():
     print(idiom.title())
@@ -113,7 +116,8 @@ for idiom in set(fav_idioms.values()):
     print(idiom.title())
 
 # When wrapping a set() around a list that contains duplicate items. 
-# Python identifies the unique items in the list and builds a set from those items 
+# Python identifies the unique items in the list and builds a set from those items
+#set() avoids the usage of duplicate items in the set or wraping a set around a dictionary
 
 # Building a set 
 # languages = {"python", "java", "JS"} etc....
