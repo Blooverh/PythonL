@@ -9,8 +9,10 @@ while polling_active:
     repeat= input("Would you like to let another person respond? (yes/no)")
     if repeat== 'no':
         polling_active=False
+
+
 print("\n---POLL RESULTS---")
-for name, response in response.items():
+for name, response in responses.items():
     print(f"{name}'s favorite country is {response}")
 
         

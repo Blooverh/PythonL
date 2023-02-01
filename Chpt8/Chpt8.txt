@@ -1,0 +1,36 @@
+ CHAPTER 8 FUNCTIONS
+
+ >> Functions aka names blocks of code that are designed to do one specific task that we have defined in a function
+    We call the function responsible for it.
+
+DEFINING A FUNCTION
+def gree_user():
+    print('hello!')
+greet_user() # calls the function
+
+We can have a main function that calls all other functions.
+
+ARGUMENTS AND PARAMETERS
+>> When a function is called and we give an information to that function we call it an parameter
+>> An argument is the variable that is used to call the function parameter
+
+PASSING ARGUMENTS
+>> Because a function definition can have multiple parameters, a function call may need multiple arguments
+>> We can pass arguments to our functions in a number of ways.
+>> We can use positional arguments, which need to be in the same order the parameters were written
+>> Keyword arguments, where each argument consists of a variable name and a value, and lists and dictionaries of values
+
+POSITIONAL ARGUMENTS
+When a function is called, python must match each argument in the function call with a parameter in the function definition.
+Simplest way to do this is based on the order of the arguments provided. Values matched up this way are called positional arguments
+
+KEYWORD ARGUMENTS
+>> name-value pair that we pass to a function.
+>> We can directly associate the name and the value within the argument
+>> When we pass the argument to the function, there is no confusion.
+>> Keyword arguments free the user from having to worry about correctly ordering the
+   arguments in the function call, and they clarify the role of each value in the function call
+
+NOTE: When using keyword arguments, be sure to use the exact names of the parameters in the functions definition
+
+DEFAULT VALUES
