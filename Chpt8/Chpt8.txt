@@ -34,3 +34,27 @@ KEYWORD ARGUMENTS
 NOTE: When using keyword arguments, be sure to use the exact names of the parameters in the functions definition
 
 DEFAULT VALUES
+When writing a function, we can define a default value for each parameter
+Meaning if when define a default value we can always call the function and not define our parameter in case
+    We want to assume we are using the same argument.
+Example:
+def describe_pet(pet_name, animal_type='dog): //in animal type we define dog as the default argument for the following parameter
+Thus when calling a function if we want to define a dog we can just use:
+    describe_pet(pet_name="flash") and not call the parameter animal type since default value dog is what we are using
+
+When a default value is used, any parameter with a default value needs to be listed after all the parameters that do not have
+default values. This allows python to continue interpreting positional arguments correctly
+
+EQUIVALENT FUNCTION CALLS
+>> Because positional arguments, keyword arguments, and default values can all be used together, often its offered
+    several equivalent ways to call a function
+>> It does not matter which calling style is used, as long as the function call produces the output needed
+
+AVOIDING ARGUMENT ERRORS
+>> Unmatched arguments occurs when we provide fewer or more arguments than a function needs
+
+RETURN VALUES
+>> A function does not always have to display its output directly. Instead. it can process some data and then return a value or set of values
+>> return statement takes a value from inside a function and sends it back to the line that called the function
+
+
