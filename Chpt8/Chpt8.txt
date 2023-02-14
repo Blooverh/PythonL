@@ -57,4 +57,7 @@ RETURN VALUES
 >> A function does not always have to display its output directly. Instead. it can process some data and then return a value or set of values
 >> return statement takes a value from inside a function and sends it back to the line that called the function
 
+OPTIONAL VALUES 
+>> They are parameters we can add in the function call but they are not mandatory when calling the function
+Check exercise 8-7 and 8-8 for example
 
