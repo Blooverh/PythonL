@@ -61,3 +61,29 @@ OPTIONAL VALUES
 >> They are parameters we can add in the function call but they are not mandatory when calling the function
 Check exercise 8-7 and 8-8 for example
 
+PASSING A LIST
+>> When passing a list to a function, the function gets direct access to the contents of the list
+
+MODIFYING A LIST IN A FUNCTION
+>> when we pass a list to a funtion we can modify the list. 
+>> Any changes made to the list in the function are permanent, allowing to work efficiently when dealing with large amounts of data
+
+Example -> printing_models.py
+
+PREVENTING A FUNCTION FROM MODIFYING A LIST
+>> In case we want to keep the original list and not have it being modified by the function
+>> We can create a copy of a list and pass it to the function; thus, any modifications
+    the function does to the list, it is actually the copy that gets those mods, leaving original list intact
+
+>> send a copy of a list to a function: 
+    fuction_name(list_name[:]) -> [:] (slice) notations makes a copy of the list to send to the function
+
+PASSING AN ARBITRARY NUMBER OF ARGUMENTS
+>> Some times we do not know ahead of time how many arguments a function needs to accept
+    However, Python allows a function to collect an arbitrary number of arguments from calling statement
+>> The asterisk in the parameter name *toppings tells Python to make an 
+    empty tuple called toppings and pack whatever values it receives into this tuple.
+
+MIXING POSITIONAL AND ARBITRARY ARGUMENTS
+>> If we want a function to accept several kinds or arguments, the parameter that accepts 
+    an arbitrary number of arguments must be places last in the function.
