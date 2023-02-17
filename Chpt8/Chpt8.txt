@@ -87,3 +87,46 @@ PASSING AN ARBITRARY NUMBER OF ARGUMENTS
 MIXING POSITIONAL AND ARBITRARY ARGUMENTS
 >> If we want a function to accept several kinds or arguments, the parameter that accepts 
     an arbitrary number of arguments must be places last in the function.
+
+USING ARBITRARY KEYWORD ARGUMENTS 
+>> Sometimes we want to accept an arbitrary numbers of args but we do not know ahead of time 
+    what kind of information will be passed to the function.
+>> Hence we can write functions that accept as many key values pairs as the calling statement provides.
+
+Example:
+def build_profile(first, last, **userInfo) -> **userInfo creates an empty dictionary 
+    That will create and store the information as they are passed to the function.
+
+STORING FUNCTIONS IN MODULES 
+>>One advantage of functions is the way they separate blocks of code from the main program
+>> Thus we can store functions in different files called a MODULES and then 
+    importing that module to the main program.
+>> Import statement tells python to make the code ina module available in the currently running program
+>> Storing your functions in a separate file allows you to hide the details of your program’s code and focus on its higher-level logic
+>> It also allows you to reuse functions in many different programs.
+>> When you store your functions in separate files, you can share those files with other programmers without 
+    having to share your entire program.
+
+IMPORTING AN ENTIRE MODULE
+>> A module is a file that ends in .py and contains importable code 
+
+IMPORTING SPECIFIC FUNCTIONS 
+>> We can also import a specific function from a module
+EXAMPLE: from module_name import function_name
+>> We can import as many functions from a module as possible
+EXAMPLE: from module_name import function_0, function_1, function_2 
+
+USING 'as' TO GIVE A FUNCTION AN ALIAS 
+>> An alternate name similar to a nickname for the function.
+EXAMPLE: from module_name import function_name as fn
+
+USINF 'as' TO GIVE A MODULE AN ALIAS 
+EXAMPLE: import numpy as np
+
+IMPORTING ALL FUNCTION IN A MODULE 
+EXAMPLE: from pizza import * -> asterisk implies all
+
+STYLING FUNCTIONS 
+>> Functions should have descriptive names and these names should use lowercase letters and underscores
+>> Every functions should have a comment that explains concisely what the function does.
+>> This comment shoulf appear immediately after the function definition and use the docstring format
