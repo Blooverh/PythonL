@@ -19,3 +19,8 @@ NOTE: windows systems use backslash (\\) instead of forwardslash (/) when displa
 We can also give the absolute path of a file in case that file is at a completely different directory from the py file
 
 READING LINE BY LINE 
+    >> We can use a for loop to iterate through each line fome the file once at a time
+Example: filename='pi_digits.txt'
+        with open(filename) as file_object:
+            for line in file_object:
+                print(line)

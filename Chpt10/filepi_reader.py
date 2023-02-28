@@ -1,7 +1,8 @@
-with open('pi_digits.txt') as file_object:
-    contents= file_object.read()
-
-print(contents.rstrip())
+filename='pi_digits.txt'
+with open(filename) as file_object:
+    for line in file_object:
+        print(line.rstrip())
+        
 
 """
 Keyword "with"  closes the file once access to it is no longer needed, with keyword does not need to be used always
