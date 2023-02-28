@@ -1,0 +1,21 @@
+Keyword "with"  closes the file once access to it is no longer needed, with keyword does not need to be used always
+We called opne() method to open file
+we can close it by diong close(), however if there is a bug that prevents the closing
+method from executing the file may never close
+
+Improperly closed files may cause data to be lost, deprecated or corrupted
+
+rstrip() method removes any whitespace characters from right sid of a string
+
+FILE PATHS
+    >> if file to be read is not in the same directory as the py file we need to explicitly tell the directory where those files are.
+    If our code is inside a folder called python_work and inside this folder there is another folder called text_files
+    if we want to open a file from there we would need to tell which directory to do
+    example:
+   with open(text_files\\text.txt) 
+
+NOTE: windows systems use backslash (\\) instead of forwardslash (/) when displaying file paths, but we can still use forwardslashs in the code
+
+We can also give the absolute path of a file in case that file is at a completely different directory from the py file
+
+READING LINE BY LINE 
