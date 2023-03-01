@@ -23,4 +23,75 @@ READING LINE BY LINE
 Example: filename='pi_digits.txt'
         with open(filename) as file_object:
             for line in file_object:
-                print(line)
+                print(line.rstrip()) # cleans whitespace on right side avoiding formatting bugs
+
+MAKING A LIST OF LINES FROM A FILE
+    >> when we use "with", the file object returned by open is only available inside the "with" block.
+    >> If we want to retain access to a file's content outside of the "with" block, we can store the file's lines 
+        on a list inside the block and then work with the list.
+
+WORKING WITH A FILE'S CONTENT 
+    >> After reading a file into memory, we can now do whatever we want with that data.
+
+REPLACE() METHOD 
+    >> replace() method is used to replace anyword existent in a string with another word
+
+
+WRITING TO FILE 
+-> open(fileName,'w') opens file to writing mode 
+-> open(fileName, 'r') opens file to read mode 
+-> open(fileName, 'a') opens file to append mode
+-> open(fileName, 'r+') opens file to a read and write mode
+>> .write() method its the function called that will write to the file
+
+NOTE: Python can only write strings to a text file. if we want to store numerical data ina rexr file we have 
+    to convert the data to string format using the str() function.
+
+WRITING MULTIPLE LINES 
+    >> When using .write() functio, inside function's " " we need \n so next string we write goes to the next line.
+
+APPENDING TO A FILE
+    >> If we want to add content to a file with existing content, we can open the file in append mode 
+
+
+EXCEPTIONS (ERRORS)
+    >> Exceptions are special objects to handle code errors that arise during a program's execution
+    >> Exceptions are handled in python with try-except blocks -> asks python to do something, and alsoo what to do when exception is raised
+    >> Using try-except blocks keep the code running even if things start to go wrong
+    >> Instead of tracebacks which can be confusing to read, users will see a friendly error message that developer will write.
+    >> Code that goes on try blocks normally are code that may arise errors.
+
+USING EXCEPTIONS TO PREVENT CRASHES 
+    Handling errors correctly is especially important when the program has more work to do after error occurs
+
+HANDLING THE FILENOTFOUNDERROR EXCEPTIONS
+    >> Handling of missing files
+EXAMPLE:
+# encoding ='utf-8' argument -> it is needed when the system's default encoding does not match the enconding of the file that is being read 
+with open(fileName, encoding='utf-8') as f: # same as file_object, its just a variable name
+    contents =f.read()
+
+ANALYZING TEXT
+    >> split() method creates a list of words that are separated by a space in a string object
+
+FAILING SILENTLY
+    >> We can type "pass" in the except block which allows the program to try the code and if an error arises, the program 
+    continues to execute. Thus failing silently
+
+NOTES:
+    .count("...") -> method that counts occurrences ofa word that we want in a string object 
+    if we want only lower case words we can do: .lower().count("...")
+
+STORING DATA 
+    JSON MODULE
+        >> allows us to dump simple python data structures into a dile and load that data from that file the next time the program runs
+        >> We can use json to share data between different python programms, plus json data format is not specific to python,
+        so we can store data in json file and read it with other programming languages
+
+    Json -> "JavaScript Object Notation" 
+
+USING json.dump() AND json.load()
+    dump() -> dumps data into json file format
+    load() -> reads information from the json file
+
+SAVING AND READING USER-GENERATED DATA
