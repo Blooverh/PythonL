@@ -95,3 +95,9 @@ USING json.dump() AND json.load()
     load() -> reads information from the json file
 
 SAVING AND READING USER-GENERATED DATA
+    >> Saving data woth json is useful when you're working with user generated data, because if we don't store  the user's info, we will lose it when the program   
+        stops running.
+
+REFACTORING 
+    >> When our code works bu we do recognize that we can make it cleaner by by breaking it up into a set of functions that have specific jobs 
+    
