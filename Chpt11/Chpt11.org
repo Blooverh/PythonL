@@ -1,0 +1,34 @@
+* TESTING IN PYTHON
+
+**
+>> When we write a function or class, we can also write tests for that code.
+>> Testing provrd that the code works as it is supposed to do
+**
+
+* Testing a function 
+    ** UNIT tests and Test Cases 
+    -> module *unittest* from python library provides tools for testing the code 
+        ** A unit test verifies that one specific aspect of a function's behavior is correct
+        ** A test case is a collection of unit tests that together prove a function behaves the way it is suppose to.
+    -> A good test case considers alll posiible kinds of input a function should receive and includes tests to represent each situation
+
+    ** Passing a test 
+        -> the syntax for setting up a test case takes some getting used to, but once we've set up the test case 
+            its straight forward to add more unit tests for your functions.
+        * TODO a test case for a function, import unittest module and the function we want to test
+        * Then create a class that inherits from unittest.TestCase, and writes a series of methods to test different aspects of the functions behavior
+
+    ** Failing a test
+
+    ** Testing a class 
+    -> Similar to testing functions but, we test multiple functions inside of a class
+
+    ** The setUp() method
+        * allows user to creat these objects once and then use them in each of the test methods
+        * any objects created in setUp() method are ran first and are available for each test method written
+
+* NOTE:
+    * When test case is running, python prints one character for each unit test as it is completed
+    >> Passing test prints a dot "."
+    >> A test that results in error prints an 'E' 
+    >> A test that results in a failed assertion prints an 'F'     
