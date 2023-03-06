@@ -1,0 +1,17 @@
+* Data visualization
+    >> Involves exploring data through visual representations
+    >> Closely associated with data analysis, which uses code to explore patterns and connections in a data set
+    ** DATA SET -> can be made up of small list on numbers that fits in one line of code or it can Gbs of data 
+
+MATPLOTLIB -> python library for mathematical plotting 
+Plotly package -> generates visualizations that work well on digital devices, generates visualizations that automatically resize to fit a variety of display devices
+
+Installing matplotlib -> pip install matplotlib
+
+fig, ax= plt.subplots():
+    ** .subplots() function can generate one or more plots in the same fig (figure)
+    ** variable fig -> represents an entire figure or collection of plots that are generated 
+    ** ax -> represents a single plot in the figure and is the variable we'll used most of the time 
+    ** plot() method -> will try to plot the data given in a meaningful way
+    ** plt.show -> opens matplotlib's viewer and displays the plot 
+    
