@@ -14,4 +14,19 @@ fig, ax= plt.subplots():
     ** ax -> represents a single plot in the figure and is the variable we'll used most of the time 
     ** plot() method -> will try to plot the data given in a meaningful way
     ** plt.show -> opens matplotlib's viewer and displays the plot 
-    
+
+* Defining Custom colors 
+    >> To change the color of the points, pass c to scatter() method, with the same name of a color in quotation marks.
+        ax.scatter(x_values, y_values, c='red', s=10)
+
+* Using a colormap
+    ** COLORMAP is a series of colors in a gradient that moves from a starting to an ending color. We use colormaps in visualizations to emphasize a pattern in the data.
+    ** pyplot module includes a set of built in colormaps. 
+    ax.scatter(x_val,y_val,c=y_val, cmap=plt.cm.Blues,s=10)
+
+* Saving plors automatically 
+    plt.savefig('squares_plot.py', bbox_inches='tight')
+
+* RANDOM WALKS
+    ** random walk is a path that has no clear direction but is determined by a series of random decisions, each of which is left entirely to chance 
+    ** Random walks have practical applications in nature, physics, biology, chemistry and economics.
