@@ -30,3 +30,11 @@ fig, ax= plt.subplots():
 * RANDOM WALKS
     ** random walk is a path that has no clear direction but is determined by a series of random decisions, each of which is left entirely to chance 
     ** Random walks have practical applications in nature, physics, biology, chemistry and economics.
+
+* Altering the size to fill the screen
+    fig, ax= plt.subplots(figsize=(15,9)) -> figsize parameter takes a tuple, which tells matplotlib the dimensions of the plotting window in inches
+    Matplotlib assumes that the screen resolution is 100 pixesl per inch
+        if the code does not give an accurate plot size, adjust the numbers as necessary
+        
+*** ROLLING DICE WITH PLOTLY 
+    Plotly package produces interactive visualizations. Plotly is particularly useful when creating visualizations that will be displayed in a browser, because the visualizations will scale automatically to fit viewer's screen
