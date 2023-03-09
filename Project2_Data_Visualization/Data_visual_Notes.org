@@ -38,3 +38,5 @@ fig, ax= plt.subplots():
         
 *** ROLLING DICE WITH PLOTLY 
     Plotly package produces interactive visualizations. Plotly is particularly useful when creating visualizations that will be displayed in a browser, because the visualizations will scale automatically to fit viewer's screen
+    ** visualizations that plotly generates are also iterative, when user hovers over certain elements on the screen, the info will be highlighted'
+    
