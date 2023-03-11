@@ -3,8 +3,8 @@
     >> Closely associated with data analysis, which uses code to explore patterns and connections in a data set
     ** DATA SET -> can be made up of small list on numbers that fits in one line of code or it can Gbs of data 
 
-MATPLOTLIB -> python library for mathematical plotting 
-Plotly package -> generates visualizations that work well on digital devices, generates visualizations that automatically resize to fit a variety of display devices
+** MATPLOTLIB -> python library for mathematical plotting 
+** Plotly package -> generates visualizations that work well on digital devices, generates visualizations that automatically resize to fit a variety of display devices
 
 Installing matplotlib -> pip install matplotlib
 
@@ -39,4 +39,6 @@ fig, ax= plt.subplots():
 *** ROLLING DICE WITH PLOTLY 
     Plotly package produces interactive visualizations. Plotly is particularly useful when creating visualizations that will be displayed in a browser, because the visualizations will scale automatically to fit viewer's screen
     ** visualizations that plotly generates are also iterative, when user hovers over certain elements on the screen, the info will be highlighted'
-    
+    * MAKING A HISTOGRAM
+        >> With a list we can make an histogram to display the results 
+        ** CHECK die.py and die_visual.py 
