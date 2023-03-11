@@ -24,7 +24,7 @@ fig, ax= plt.subplots():
     ** pyplot module includes a set of built in colormaps. 
     ax.scatter(x_val,y_val,c=y_val, cmap=plt.cm.Blues,s=10)
 
-* Saving plors automatically 
+* Saving plots automatically 
     plt.savefig('squares_plot.py', bbox_inches='tight')
 
 * RANDOM WALKS
