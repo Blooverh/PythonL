@@ -1,3 +1,4 @@
+* CHAPTER 15
 * Data visualization
     >> Involves exploring data through visual representations
     >> Closely associated with data analysis, which uses code to explore patterns and connections in a data set
@@ -42,3 +43,22 @@ fig, ax= plt.subplots():
     * MAKING A HISTOGRAM
         >> With a list we can make an histogram to display the results 
         ** CHECK die.py and die_visual.py 
+
+* CHAPTER 16
+    >> Downloading data from .csv, .json among other file types
+    ** datetime Module:
+        If a date is read as string it is necessary to convert it into a date object by using .strptime() 
+        Example:
+            first_date= datetime.strptime('2018-07-01'. '%Y-%m-%d')
+    Formating Arguments for datetime module:
+        %A Weekday name, such as Monday
+        %B Month name, such as January
+        %m Month, as a number (01 to 12)
+        %d Day of the month, as a number (01 to 31)
+        %Y Four-digit year, such as 2019
+        %y Two-digit year, such as 19
+        %H Hour, in 24-hour format (00 to 23)
+        %I Hour, in 12-hour format (01 to 12)
+        %p am or pm
+        %M Minutes (00 to 59)
+        %S Seconds (00 to 61)
