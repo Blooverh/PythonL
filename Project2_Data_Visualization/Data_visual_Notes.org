@@ -62,3 +62,11 @@ fig, ax= plt.subplots():
         %p am or pm
         %M Minutes (00 to 59)
         %S Seconds (00 to 61)
+    
+* CHAPTER 17 WORKING WITH APIs
+    ** API -> application programming interface -> can automatically request specific data and information from a website rather than entire pages
+    ** WEB API -> is a part of a website designed to interact with programms.
+        These specific programms use very specific URLs to request certain information. This kind of reques is called *API call*
+        The requested data will be returned in an easily processed format such as .csv, or .json.
+        Most apps that rely on external data sources, such as apps that integrate with social media websites, rely on API calls 
+    ** Installing Requests package -> allows python program to easily request information from website and examine the response
