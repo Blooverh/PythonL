@@ -70,3 +70,5 @@ fig, ax= plt.subplots():
         The requested data will be returned in an easily processed format such as .csv, or .json.
         Most apps that rely on external data sources, such as apps that integrate with social media websites, rely on API calls 
     ** Installing Requests package -> allows python program to easily request information from website and examine the response
+    ** Most APIs are rate limited -> meaning there is a limit on how many requests we can make in a certain amount of time
+    * Many APIs require registration to obtain an API key to make API calls.
